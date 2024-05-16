@@ -11,7 +11,7 @@ export function useProfile() {
 
   function handleLogout() {
     localStorage.clear()
-    navigate('/sign-in')
+    navigate('/sign-in', { replace: true })
   }
 
   async function fetchProfile() {

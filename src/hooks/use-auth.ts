@@ -23,8 +23,10 @@ export function useAuth() {
         const status = error.response?.status
 
         if (status === 401) {
-          toast.error('Usuário e/ou senha incorreto(s)')
+          return toast.error('Usuário e/ou senha incorreto(s)')
         }
+
+        return toast.error('Por favor, tente novamente em alguns instantes.')
       }
     }
   }

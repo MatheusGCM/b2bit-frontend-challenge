@@ -44,7 +44,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
 
-        <span className="text-red-b2 block h-3 text-xs">{error}</span>
+        <span className="block h-3 text-xs text-red-b2">{error}</span>
       </div>
     )
   },

@@ -24,7 +24,7 @@ export function Form({ onSubmit }: FormProps) {
     <form className="flex flex-col gap-3" onSubmit={handleSubmit(onSubmit)}>
       <Input
         label="E-mail"
-        type="text"
+        type="email"
         placeholder="@gmail.com"
         error={errors.email?.message}
         {...register('email')}
