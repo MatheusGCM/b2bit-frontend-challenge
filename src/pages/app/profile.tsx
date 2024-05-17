@@ -7,10 +7,10 @@ export function Profile() {
   const { profile, handleLogout } = useProfile()
 
   return (
-    <div className="relative flex h-screen items-center justify-center bg-white-2">
+    <div className="relative flex h-screen items-center justify-center min-[460px]:bg-white-2">
       <Helmet title="Profile" />
 
-      <header className="absolute top-0 flex h-[4.375rem] w-full items-center justify-end bg-white px-[2.125rem]">
+      <header className="absolute top-0 flex h-[4.375rem] w-full items-center justify-center bg-white px-[2.125rem] min-[460px]:justify-end">
         <Button
           label="Logout"
           className="h-[2.75rem] w-[17rem] rounded-md"
@@ -18,7 +18,7 @@ export function Profile() {
         />
       </header>
 
-      <div className="w-96 rounded-2xl border bg-white p-[1.875rem] pb-4 shadow-[0_2px_10px_0_#0000001A]">
+      <div className="w-96 rounded-2xl bg-white p-[1.875rem] pb-4 min-[460px]:border min-[460px]:shadow-[0_2px_10px_0_#0000001A]">
         <ProfilePicture src="https://github.com/MatheusGCM.png" />
         <StaticInput label="Name" value={profile?.name} />
         <StaticInput label="E-mail" value={profile?.email} />
